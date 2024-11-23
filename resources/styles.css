@@ -1,25 +1,27 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 header {
-  height: 100px;
-
+  display: block;
+  height: 130px;
   font-family: "Parkinsans", sans-serif;
 }
 
 .company-title {
   display: flex;
-  padding: 1vw 3vw;
+  padding: 5px 60px;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 #company-logo-branch {
-  height: 15vw;
-  width: 20vw;
+  height: auto;
+  width: auto;
+  max-height: 120px;
 }
 
 nav ul {
@@ -31,10 +33,62 @@ nav li {
   list-style: none;
   padding-left: 3vw;
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 1.3vw;
   font-weight: bold;
+  color: gold;
 }
 
 nav li a {
   text-decoration: none;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  margin-top: -130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+              url('./images/background-image.png') no-repeat center center / cover;
+  background-blend-mode: lighten; Blends the white overlay with the image */
+  background-image: url("./images/background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+#branch {
+  display: none;
+}
+@media only screen and (max-width: 425px) {
+  nav li {
+    font-size: 2.3vw;
+  }
+
+  #company-logo-branch {
+    height: 15vw;
+    width: auto;
+  }
+
+  .company-title {
+    padding: 5px 10px;
+  }
+
+  .main-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+  }
+
+  #branch {
+    display: block;
+    height: 150px;
+  }
 }
