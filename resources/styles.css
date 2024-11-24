@@ -3,11 +3,23 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-family: "Parkinsans", sans-serif;
+}
 
+body {
+  background-image: url("./images/background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 header {
   display: block;
-  height: 130px;
-  font-family: "Parkinsans", sans-serif;
+  height: 100px;
+
+  background-color: rgba(255, 255, 255, 0.76);
+  position: sticky;
+  top: 0px;
 }
 
 .company-title {
@@ -15,27 +27,40 @@ header {
   padding: 5px 60px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 #company-logo-branch {
   height: auto;
   width: auto;
-  max-height: 120px;
+  max-height: 90px;
 }
 
 nav ul {
   display: flex;
   padding: 0px;
+  margin-right: -2vw;
+  align-items: center;
 }
 
 nav li {
   list-style: none;
-  padding-left: 3vw;
+  padding: 0.5vw 2vw;
   text-transform: uppercase;
   font-size: 1.3vw;
   font-weight: bold;
-  color: gold;
+  color: black;
+  cursor: pointer;
+  border: 1px solid gray;
+  margin-right: 1vw;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+nav li:hover {
+  background-color: gold;
+  color: black;
+  border-radius: 20px;
 }
 
 nav li a {
@@ -45,7 +70,7 @@ nav li a {
 main {
   height: 100vh;
   width: 100vw;
-  margin-top: -130px;
+  margin-top: -100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,21 +79,49 @@ main {
   /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
               url('./images/background-image.png') no-repeat center center / cover;
   background-blend-mode: lighten; Blends the white overlay with the image */
-  background-image: url("./images/background-image.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .main-text {
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   color: whitesmoke;
+  text-shadow: 4px 3px 7px rgba(255, 215, 0, 0.3);
+}
+.tagline {
+  padding: 20px 0;
+  font-size: 30px;
+  font-style: italic;
 }
 
+.one-percent {
+  font-size: 50px;
+  text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, 1px 1px 0 gold, 1px 1px 0 gold;
+}
 #branch {
   display: none;
 }
+
+.vision-mission-container {
+  padding: 60px 90px;
+  background-color: rgba(255, 255, 255, 0.863);
+}
+
+.vision-mission h3 {
+  padding: 20px;
+}
+
+.vision-mission p {
+  padding: 10px 10px 10px 20px;
+}
+
 @media only screen and (max-width: 425px) {
+  header {
+    height: 18vw;
+  }
+  nav ul {
+    margin-right: 0;
+  }
+
   nav li {
     font-size: 2.3vw;
   }
@@ -84,11 +137,15 @@ main {
 
   .main-text {
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #branch {
     display: block;
     height: 150px;
+  }
+
+  .tagline {
+    font-size: 15px;
   }
 }
