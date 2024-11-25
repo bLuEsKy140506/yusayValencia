@@ -101,20 +101,38 @@ main {
   display: none;
 }
 
-.vision-mission-container {
+.vision-mission-container, .product {
 
   padding: 80px 20vw;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.863);
+  background-color: rgba(255, 255, 255, 0.90);
+  box-shadow: 0px 3px 3px 3px rgba(255,149,5,0.93);
 }
 
 .vision-mission h3 {
   padding: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .vision-mission p {
   padding: 10px 10px 10px 20px;
   line-height: 1.5;
+}
+
+.title-h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.realEstate img{
+  width: 45%;
 }
 
 @media only screen and (max-width: 768px) {
