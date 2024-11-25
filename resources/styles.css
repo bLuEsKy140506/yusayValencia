@@ -46,8 +46,8 @@ nav li {
   list-style: none;
   padding: 0.5vw 2vw;
   text-transform: uppercase;
-  font-size: 1.3vw;
-  font-weight: bold;
+  font-size: 1vw;
+ 
   color: black;
   cursor: pointer;
   border: 1px solid gray;
@@ -102,17 +102,30 @@ main {
 }
 
 .vision-mission-container {
-  padding: 60px 90px;
+
+  padding: 80px 20vw;
+  margin: auto;
   background-color: rgba(255, 255, 255, 0.863);
 }
 
 .vision-mission h3 {
-  padding: 20px;
+  padding: 30px;
 }
 
 .vision-mission p {
   padding: 10px 10px 10px 20px;
+  line-height: 1.5;
 }
+
+@media only screen and (max-width: 768px) {
+ 
+  nav li {
+    font-size: 1.5vw;
+  }
+
+}
+
+
 
 @media only screen and (max-width: 425px) {
   header {
