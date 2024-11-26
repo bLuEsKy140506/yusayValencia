@@ -147,6 +147,26 @@ main {
   align-items: center;
 }
 
+.personnel-container {
+ 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employee {
+  display: block;
+  width: 20%;
+
+  margin-bottom: 20px;
+}
+.img-employee {
+
+  background-color: darkgray;
+   width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 
 @media only screen and (max-width: 768px) {
  
