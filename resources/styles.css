@@ -63,6 +63,11 @@ nav li:hover {
   border-radius: 20px;
 }
 
+a:active, a:visited {
+  color: black;
+}
+
+
 nav li a {
   text-decoration: none;
 }
@@ -124,6 +129,8 @@ main {
   font-size: 40px;
   text-align: center;
   margin: 30px auto 20px auto;
+  display: sticky;
+  top: 40px;
 }
 
 .product-container {
@@ -177,6 +184,12 @@ main {
   border-radius: 50%;
 }
 
+.img-employee img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 
 @media only screen and (max-width: 768px) {
  
@@ -195,7 +208,6 @@ main {
 
 
   .personnel-container {
-
     justify-content: center;
   }
 
@@ -219,6 +231,9 @@ main {
 
   nav li {
     font-size: 2.3vw;
+    height: 25px;
+    display: flex;
+    align-items: center;
   }
 
   #company-logo-branch {
@@ -251,21 +266,15 @@ main {
   }
 
   .title-h2 {
-    margin: 20px auto;
+    margin: 30px auto;
+    font-size: 25px;
   }
   .product-container {
     flex-direction: column;
     justify-content: center;
   }
 
-  .personnel-container h2 {
-    margin: 30px auto;
-  }
-
-  .personnel-container {
-
-    justify-content: center;
-  }
+  
 
   .employee {
     margin-top: 20px;
