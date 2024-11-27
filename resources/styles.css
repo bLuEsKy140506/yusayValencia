@@ -148,19 +148,29 @@ main {
 }
 
 .personnel-container {
- 
+
   display: flex;
   flex-wrap: wrap;
+  column-gap: 40px;
+  text-align: center;
+}
+
+.title-h2 {
+  margin-bottom: 60px;
 }
 
 .employee {
   display: block;
   width: 20%;
-
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-.img-employee {
 
+.employee h3 {
+  margin-top: 20px;
+}
+
+.img-employee {
+  margin: auto;
   background-color: darkgray;
    width: 100px;
   height: 100px;
@@ -172,6 +182,27 @@ main {
  
   nav li {
     font-size: 1.5vw;
+  }
+
+  .product-container {
+    column-gap: 40px;
+  
+  }
+
+  .realEstate img, .pension img{
+    width: 100%;
+  }
+
+
+  .personnel-container {
+
+    justify-content: center;
+  }
+
+  .employee {
+    margin-top: 20px;
+       width: fit-content;
+
   }
 
 }
@@ -212,4 +243,34 @@ main {
   .tagline {
     font-size: 15px;
   }
+
+  .vision-mission-container, #products, #personnels {
+
+    padding: 40px 10vw;
+    
+  }
+
+  .title-h2 {
+    margin: 20px auto;
+  }
+  .product-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .personnel-container h2 {
+    margin: 30px auto;
+  }
+
+  .personnel-container {
+
+    justify-content: center;
+  }
+
+  .employee {
+    margin-top: 20px;
+       width: fit-content;
+
+  }
+
 }
